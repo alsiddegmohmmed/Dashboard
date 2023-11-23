@@ -1,0 +1,37 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            /* Define the grid structure */
+            grid-template-rows: auto 1fr; /* Header takes auto size, the rest is flexible */
+            grid-template-columns: 200px 1fr 200px; /* Sidebar, Article, Right Sidebar */
+            grid-template-areas:
+                "sidebar header header"
+                "sidebar article right-sidebar";
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header; /* Place the header in the specified grid area */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: sidebar; /* Place the sidebar in the specified grid area */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        article {
+            grid-area: article; /* Place the article in the specified grid area */
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: right-sidebar; /* Place the right sidebar in the specified grid area */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
