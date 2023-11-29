@@ -1,37 +1,56 @@
- body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: grid;
-            /* Define the grid structure */
-            grid-template-rows: auto 1fr; /* Header takes auto size, the rest is flexible */
-            grid-template-columns: 200px 1fr 200px; /* Sidebar, Article, Right Sidebar */
-            grid-template-areas:
-                "sidebar header header"
-                "sidebar article right-sidebar";
-            min-height: 100vh;
-        }
+* {
+  margin:0; 
+  padding: 0;
+}
 
-        header {
-            grid-area: header; /* Place the header in the specified grid area */
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+img {
+  width: 20px;
+}
 
-        nav {
-            grid-area: sidebar; /* Place the sidebar in the specified grid area */
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
+svg {
+  width: 20px;
+}
 
-        article {
-            grid-area: article; /* Place the article in the specified grid area */
-            padding: 20px;
-        }
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
 
-        aside {
-            grid-area: right-sidebar; /* Place the right sidebar in the specified grid area */
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 50px;
+}
+
+.icon-text p {
+  margin-left: 10px;
+  font-size: 20px;
+  
+}
+
+
+
+.sidebar {
+  background-color: #22d3ee;
+  height: 100vh;
+  color: white;
+}
+
+.main {
+  background-color: white;
+  height: 100vh;
+}
+svg {
+  size : 10px ;
+}
